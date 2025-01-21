@@ -79,7 +79,7 @@ SELECT * FROM public.clienti WHERE nome = 'Mario';
 --Estrai nome e cognome dei clienti nati nel 1982:
 SELECT nome, cognome FROM public.clienti WHERE anno_nascita = 1982; 
 --Estrai il numero delle fatture con iva al 22%: 
-SELECT numero_fattura FROM public.fatture WHERE iva = 22;
+SELECT count(*) AS NUMERO_FATTURE_20 FROM public.fatture WHERE iva = 22;
 --Estrai le fatture con importo inferiore a 1000 e i dati dei clienti ad esse collegate:
 SELECT * FROM public.fatture WHERE importo < 1000;
 
